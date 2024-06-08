@@ -45,8 +45,11 @@ html {
 .content {
     background-color: #222222;
     display: block;
+    position: absolute;
     margin: -10px;
     border: solid 10px#111111;
+    height: 60%;
+    width: 99%;
 }
 
 .terminal {
