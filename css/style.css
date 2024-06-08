@@ -43,14 +43,33 @@ html {
 }
 
 .content {
-    background-color: #56603D;
+    background-color: #222222;
     display: block;
     margin: -10px;
     border: solid 10px#111111;
 }
 
-.terminal p{
+.terminal {
     font-family: 'Consolas';
+    color: #56603D;
+    font-size: large;
+}
+
+.terminal input {
+    width: 60%;
+    border: none;
+    background: #222222;
+    color: #56603D;
+    font-family: 'Consolas';
+    font-size: large;
+    outline: none;
+}
+
+.bottom {
+    position: fixed;
+    left: 50%;
+    bottom: 1%;
+    transform: translateX(-100px);
 }
 
 .banner .links{
