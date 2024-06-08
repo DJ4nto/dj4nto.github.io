@@ -24,6 +24,7 @@ html {
     color: #56603D;
     position: absolute;
     left: 20px;
+    top: -16px;
 }
 
 .banner .pseudo {
@@ -33,6 +34,7 @@ html {
     color: #56603D;
     position: absolute;
     right: 20px;
+    top: -16px;
 }
 
 .banner .links{
