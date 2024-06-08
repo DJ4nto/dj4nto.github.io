@@ -48,7 +48,7 @@ html {
     position: absolute;
     margin: -10px;
     border: solid 10px#111111;
-    height: 60%;
+    height: 64%;
     width: 99%;
 }
 
@@ -72,14 +72,30 @@ html {
     position: fixed;
     left: 50%;
     bottom: 1%;
-    transform: translateX(-100px);
 }
 
 .banner .links{
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+    font-size: larger;
+    transform: translateX(-250px);
 }
 
 .banner .links a {
     text-decoration: none;
+    color: #999999;
+    margin: 10px;
+}
+
+.banner .links a:hover {
+    text-decoration: underline;
+}
+
+.banner .copyrights {
+    color: #999999;
+    transform: translateX(-90px);
+}
+
+.banner .copyrights a {
+    color: #999999;
 }
