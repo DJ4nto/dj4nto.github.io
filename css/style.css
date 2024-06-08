@@ -6,7 +6,7 @@ html {
 .top {
     background-color: #111111;
     margin: -10px;
-    border: solid;
+    border: 0.1px solid #111111;
 }
 
 .top .banner {
