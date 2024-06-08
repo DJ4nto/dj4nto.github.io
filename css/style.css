@@ -3,8 +3,18 @@ html {
     background-color: #56603D;
 }
 
+.top {
+    background-color: #111111;
+    margin: -10px;
+    border: solid;
+}
+
 .top .banner {
     background-color: #111111;
+    margin: 20px -18px 20px -18px;
+    border-style: dashed;
+    border-color: #56603D;
+    border-width: 6px;
 }
 
 .banner .name {
