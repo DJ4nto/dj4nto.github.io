@@ -15,15 +15,15 @@ html {
     border-style: dashed;
     border-color: #56603D;
     border-width: 6px;
+    height: 120px;
 }
 
 .banner .name {
     font-family: 'Times New Roman', Times, serif;
     font-size: 64px;
     color: #56603D;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 20px;
+    position: absolute;
+    left: 20px;
 }
 
 .banner .pseudo {
@@ -31,9 +31,8 @@ html {
     font-weight: bold;
     font-size: 64px;
     color: #56603D;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 100px;
+    position: absolute;
+    right: 20px;
 }
 
 .banner .links{
