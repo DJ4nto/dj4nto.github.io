@@ -46,8 +46,8 @@ html {
     background-color: #222222;
     display: block;
     position: absolute;
-    margin: -10px;
-    border: solid 11px#111111;
+    margin: 0 0 0 -10px;
+    border: 12px solid #111111;
     height: 64%;
     width: 99%;
 }
