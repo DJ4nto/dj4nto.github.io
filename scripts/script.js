@@ -17,9 +17,18 @@ document.getElementById('input').addEventListener('keydown', function(event) {
         const responseDiv = document.createElement('div');
         const skip = document.createElement('br') ;
         if (command === 'help') {
-            responseDiv.textContent = 'Commandes disponibles: help, date, CV, DubMania, clear';
+            responseDiv.textContent = 'Commandes disponibles: help, date, contact, CV, DubMania, clear';
         } else if (command === 'date') {
             responseDiv.textContent = new Date().toString();
+        } else if (command === 'contact') {
+            const mail_L = document.createElement('a');
+            mail_L.href = 'lecocqantonin@gmail.com';
+            mail_L.target = '_blank';
+            mail_L.textContent = 'Me contacter :'
+            const mail_A = document.createElement('p');
+            mail_A.textContent = 'lecocqantonin@gmail.com';
+            responseDiv.appendChild(mail_L);
+            responseDiv.appendChild(mail_A);
         } else if (command === 'cv') {
             const link = document.createElement('a');
             link.href = './assets/CV.pdf';
@@ -44,7 +53,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
             link2.textContent = 'DubMania';
             responseDiv.appendChild(link1);
             responseDiv.appendChild(skip);
-            responseDiv.appendChild(link2)
+            responseDiv.appendChild(link2);
         } else if (command === 'clear') {
             output.innerHTML = '';
         } else {
