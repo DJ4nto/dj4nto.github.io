@@ -15,22 +15,36 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 
         // Gère les commandes
         const responseDiv = document.createElement('div');
+        const skip = document.createElement('br') ;
         if (command === 'help') {
             responseDiv.textContent = 'Commandes disponibles: help, date, CV, DubMania, clear';
         } else if (command === 'date') {
             responseDiv.textContent = new Date().toString();
         } else if (command === 'cv') {
             const link = document.createElement('a');
-            link.href = 'https://drive.google.com/file/d/10Qlu5muhJ92iJrUkiyOHSixGy4VPJG2G/view?usp=sharing';
+            link.href = './assets/CV.pdf';
             link.target = '_blank';
-            link.textContent = 'Regarder mon CV';
+            link.textContent = 'Accéder au Curriculum Vitae';
+            const pdf = document.createElement('embed');
+            pdf.src = './assets/CV.pdf';
+            pdf.type = 'application/pdf';
+            pdf.width = "400";
+            pdf.height = "300";
             responseDiv.appendChild(link);
+            responseDiv.appendChild(skip);
+            responseDiv.appendChild(pdf);
         } else if (command === 'dubmania') {
             const link1 = document.createElement('a');
             link1.href = 'https://github.com/DJ4nto/DubMania';
             link1.target = '_blank';
-            link1.textContent = 'DubMania';
+            link1.textContent = 'Github repo';
+            const link2 = document.createElement('a');
+            link2.href = 'https://dj4nto.github.io/DubMania/';
+            link2.target = '_blank';
+            link2.textContent = 'DubMania';
             responseDiv.appendChild(link1);
+            responseDiv.appendChild(skip);
+            responseDiv.appendChild(link2)
         } else if (command === 'clear') {
             output.innerHTML = '';
         } else {
