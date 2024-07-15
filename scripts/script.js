@@ -22,7 +22,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
             responseDiv.textContent = new Date().toString();
         } else if (command === 'contact') {
             const mail_L = document.createElement('a');
-            mail_L.href = 'lecocqantonin@gmail.com';
+            mail_L.href = 'mailto:lecocqantonin@gmail.com';
             mail_L.target = '_blank';
             mail_L.textContent = 'Me contacter :'
             const mail_A = document.createElement('p');
