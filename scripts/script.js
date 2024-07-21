@@ -62,3 +62,39 @@ document.getElementById('input').addEventListener('keydown', function(event) {
         output.appendChild(responseDiv);
     }
 });
+
+function changeLanguage() {
+    const language = document.getElementById('language').value;
+    const text1 = document.getElementById('txt_1');
+    const text2 = document.getElementById('txt_2');
+    const btn_text = document.getElementById('TerminalButton');
+
+    const txt1 = {
+        'fr': 'Étudiant français',
+        'en': 'French student'
+    };
+
+    const txt2 = {
+        'fr': "Intéressé par la cryptographie et la stéganographie. J'aime aussi faire des CTFs.",
+        'en': "Interested in cryptography and steganography. I also love playing CTFs."
+    };
+
+    const btntxt = {
+        'fr': 'Ouvrir le terminal',
+        'en': 'Open the terminal'
+    };
+
+    textContent.text1 = txt1[language];
+    textContent.text2 = txt2[language];
+    textContent.btn_text = btntxt[language];
+}
+
+document.getElementById('TerminalButton').addEventListener('click', function() {
+    var element = document.getElementById('content');
+    element.style.margin = '-300px 0 0 -500px';
+});
+
+document.getElementById('CloseTerminalButton').addEventListener('click', function() {
+    var element = document.getElementById('content');
+    element.style.margin = '-300px 0 0 -2500px';
+});

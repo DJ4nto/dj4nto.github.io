@@ -13,9 +13,26 @@
             <a class="pseudo">DJ4nto</a>
         </div>
     </div>
+    
+    <main>
 
-    <div class="content">
-        <button class="close_terminal">X</button>
+        <div class="language-selector">
+            <label for="language">Langue :</label>
+            <select id="language" onchange="changeLanguage()">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <div class="center">
+            <p id="txt_1">Étudiant français</p>
+            <p id="txt_2">Intéressé par la cryptographie et la stéganographie. J'aime aussi faire des CTFs.</p>
+            <button id="TerminalButton">Ouvrir le terminal</button>
+        </div>
+
+    </main>
+
+    <div class="content" id="content">
+        <button class="close_terminal" id="CloseTerminalButton">X</button>
         <div class="terminal">
             <p class="help">Type "help" if you need some / Taper "help" si vous avez besoin d'aide</p>
             <div class="line">
