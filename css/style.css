@@ -55,7 +55,7 @@ body {
     transition: all .2s ease-out;
 }
 
-main {
+.main {
     font-family: Arial, Helvetica, sans-serif;
     color: #56603D;
     text-align: center;
@@ -63,7 +63,7 @@ main {
     font-size: 36px;
 }
 
-main .language-selector {
+.main .language-selector {
     position: absolute;
     top: 26%;
     left: 50%;
@@ -72,7 +72,7 @@ main .language-selector {
     font-weight: bold;
 }
 
-main select {
+.main select {
     background: none;
     border: none;
     color: #56603D;
@@ -80,14 +80,14 @@ main select {
     font-weight: bold;
 }
 
-main .center {
+.main .center {
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translateX(-50%);
 }
 
-main button {
+.main button {
     background-color: #050505;
     border: solid 2px #999999;
     width: 250px;
@@ -97,7 +97,7 @@ main button {
     transition: all .2s ease-in-out;
 }
 
-main button:hover {
+.main button:hover {
     background-color: #0c0c0c;
     border: solid 2px #56603D;
     color: #56603D;
