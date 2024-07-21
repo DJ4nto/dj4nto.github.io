@@ -5,20 +5,24 @@
 
 html {
     overflow: hidden;
-    background-color: #56603D;
+    background-color: #050505;
+}
+
+body {
+    margin: 0;
 }
 
 .top {
-    background-color: #111111;
+    background-color: #050505;
     margin: -10px;
-    border: 0.1px solid #111111;
+    border: 0.1px solid #050505;
 }
 
 .top .banner {
-    background-color: #111111;
-    margin: 20px -18px 20px -18px;
+    background-color: #050505;
+    margin: 30px -18px 0px -18px;
     border-style: dashed;
-    border-color: #56603D;
+    border-color: #999999 #050505 #050505;
     border-width: 6px;
     height: 120px;
 }
@@ -26,30 +30,39 @@ html {
 .banner .name {
     font-family: 'Times New Roman', Times, serif;
     font-size: 64px;
-    color: #56603D;
+    color: #999999;
     position: absolute;
     left: 20px;
-    top: -16px;
+    top: 36px;
+    text-decoration: none;
+    transition: all .2s ease-out;
 }
 
 .banner .pseudo {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 64px;
-    color: #56603D;
+    color: #999999;
     position: absolute;
     right: 30px;
-    top: -16px;
+    top: 36px;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+
+.banner a:hover {
+    color: #56603D;
+    transition: all .2s ease-out;
 }
 
 .content {
-    background-color: #222222;
+    background-color: #0c0c0c;
     display: block;
     position: absolute;
-    margin: 0 0 0 -10px;
-    border: 12px solid #111111;
+    border: 4px solid #000000;
+    border-top: 26px solid #000000;
     height: 64%;
-    width: 99%;
+    width: 90%;
 }
 
 .terminal {
@@ -58,10 +71,22 @@ html {
     font-size: large;
 }
 
+.terminal .help {
+    margin: 5px 0 10px 5px;
+}
+
+.terminal .line {
+    margin-left: 5px;
+}
+
+.terminal .output {
+    margin: 5px 0 10px 5px;
+}
+
 .terminal input {
     width: 60%;
     border: none;
-    background: #222222;
+    background: #0c0c0c;
     color: #56603D;
     font-family: 'Consolas';
     font-size: large;
@@ -78,17 +103,19 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-size: larger;
-    transform: translateX(-250px);
+    transform: translateX(-50%);
 }
 
 .banner .links a {
     text-decoration: none;
     color: #999999;
     margin: 10px;
+    transition: all .2s ease-out;
 }
 
 .banner .links a:hover {
-    text-decoration: underline;
+    color: #56603D;
+    transition: all .2s ease-out;
 }
 
 .banner .copyrights {
