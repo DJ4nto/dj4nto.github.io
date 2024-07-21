@@ -51,11 +51,8 @@ document.getElementById('input').addEventListener('keydown', function(event) {
             link2.href = 'https://dj4nto.github.io/DubMania/';
             link2.target = '_blank';
             link2.textContent = 'DubMania';
-            const txt = document.createElement('p');
-            txt.textContent = 'En cour de développement : ';
             responseDiv.appendChild(link1);
             responseDiv.appendChild(skip);
-            responseDiv.appendChild(txt);
             responseDiv.appendChild(link2);
         } else if (command === 'clear') {
             output.innerHTML = '';
