@@ -63,6 +63,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
     }
 });
 
+
 function changeLanguage() {
     const language = document.getElementById('language').value;
     const text1 = document.getElementById('txt_1');
@@ -88,6 +89,7 @@ function changeLanguage() {
     textContent.text2 = txt2[language];
     textContent.btn_text = btntxt[language];
 }
+
 
 document.getElementById('TerminalButton').addEventListener('click', function() {
     var element = document.getElementById('content');
