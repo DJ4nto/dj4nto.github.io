@@ -17,9 +17,13 @@ document.getElementById('input').addEventListener('keydown', function(event) {
         const responseDiv = document.createElement('div');
         const skip = document.createElement('br') ;
         if (command === 'help') {
-            responseDiv.textContent = 'Commandes disponibles: help, date, contact, CV, DubMania, clear';
+            responseDiv.textContent = 'Commandes disponibles: help, about, date, contact, CV, DubMania, clear';
         } else if (command === 'date') {
             responseDiv.textContent = new Date().toString();
+        } else if (command === 'about') {
+            const me = document.createElement('p');
+            me.textContent = "Je m'appelle Antonin LECOCQ, je suis étudiant diplômé du baccalauréat passionné par la programmation, la cryptographie, la stéganographie et la musique. Pour toutes questions, me contacter.";
+            responseDiv.appendChild(me);
         } else if (command === 'contact') {
             const mail_L = document.createElement('a');
             mail_L.href = 'mailto:lecocqantonin@gmail.com';
