@@ -62,17 +62,17 @@ body {
     border: 4px solid #000000;
     border-top: 26px solid #000000;
     height: 64%;
-    width: 90%;
 }
 
 .terminal {
     font-family: 'Consolas';
     color: #56603D;
     font-size: large;
+    width: 1000px;
 }
 
 .terminal .help {
-    margin: 5px 0 10px 5px;
+    margin: -20px 0 10px 5px;
 }
 
 .terminal .line {
@@ -91,6 +91,27 @@ body {
     font-family: 'Consolas';
     font-size: large;
     outline: none;
+}
+
+.content .close_terminal {
+    position: relative;
+    height: 26px;
+    width: 50px;
+    background-color: #000000;
+    transition: all .1s ease-out;
+    border: none;
+    color: white;
+    top: -26px;
+    left: 954px;
+}
+
+.close_terminal:hover {
+    background-color: red;
+    transition: all .1s ease-out;
+}
+
+.close_terminal:active {
+    background-color: #8b0a14;
 }
 
 .bottom {
