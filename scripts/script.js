@@ -13,7 +13,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
         commandDiv.textContent = '> ' + command;
         output.appendChild(commandDiv);
 
-        // Gère les commandes
+        // Affiche ce que l'on veut en fonction de l'input
         const responseDiv = document.createElement('div');
         const skip = document.createElement('br') ;
         if (command === 'help') {
@@ -68,33 +68,6 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 });
 
 
-function changeLanguage() {
-    const language = document.getElementById('language').value;
-    const text1 = document.getElementById('txt_1');
-    const text2 = document.getElementById('txt_2');
-    const btn_text = document.getElementById('TerminalButton');
-
-    const txt1 = {
-        'fr': 'Étudiant français',
-        'en': 'French student'
-    };
-
-    const txt2 = {
-        'fr': "Intéressé par la cryptographie et la stéganographie. J'aime aussi faire des CTFs.",
-        'en': "Interested in cryptography and steganography. I also love playing CTFs."
-    };
-
-    const btntxt = {
-        'fr': 'Ouvrir le terminal',
-        'en': 'Open the terminal'
-    };
-
-    textContent.text1 = txt1[language];
-    textContent.text2 = txt2[language];
-    textContent.btn_text = btntxt[language];
-}
-
-
 document.getElementById('TerminalButton').addEventListener('click', function() {
     var element = document.getElementById('content');
     element.style.margin = '-300px 0 0 -500px';
@@ -103,4 +76,44 @@ document.getElementById('TerminalButton').addEventListener('click', function() {
 document.getElementById('CloseTerminalButton').addEventListener('click', function() {
     var element = document.getElementById('content');
     element.style.margin = '-300px 0 0 -2500px';
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const languageSelect = document.getElementById("language-select");
+    const text1 = document.getElementById("txt_1");
+    const text2 = document.getElementById("txt_2");
+    const text3 = document.getElementById("TerminalButton");
+
+    const translations = {
+        en: {
+            translation1: "French student",
+            translation2: "Interested in cryptography and steganography. I love playing CTF.",
+            translation3: "Open the terminal"
+        },
+        fr: {
+            translation1: "Étudiant français",
+            translation2: "Intéressé par la cryptographie et la stéganographie. J'aime aussi faire des CTFs.",
+            translation3: "Ouvrir le terminal"
+        }
+    };
+
+    // Fonction permettant de mettre à jour le texte en fonction de la langue sélectionnée
+    function updateLanguage() {
+        const selectedLanguage = languageSelect.value;
+        text1.textContent = translations[selectedLanguage].translation1;
+        text2.textContent = translations[selectedLanguage].translation2;
+        text3.textContent = translations[selectedLanguage].translation3;
+        localStorage.setItem('preferredLanguage', selectedLanguage);
+    }
+
+    // Ecoute pour le changement de langue
+    languageSelect.addEventListener("change", updateLanguage);
+
+    // Chargement de la langue préférée à partir de la mémoire locale, si elle est disponible
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    if (savedLanguage) {
+        languageSelect.value = savedLanguage;
+        updateLanguage();
+    }
 });
