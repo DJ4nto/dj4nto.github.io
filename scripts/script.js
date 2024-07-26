@@ -94,12 +94,14 @@ document.getElementById('input').addEventListener('keydown', function(event) {
             text.className = 'description';
             const link1 = createLink(github_href, 'Github');
             link1.className = 'link1';
-            const link2 = createLink(href, 'View Site');
-            link2.className = 'link2';
             projectDiv.appendChild(title);
             projectDiv.appendChild(text);
             projectDiv.appendChild(link1);
-            projectDiv.appendChild(link2);
+			if (href !== "none") {
+				const link2 = createLink(href, 'View Site');
+				link2.className = 'link2';
+				projectDiv.appendChild(link2);
+			}
             return projectDiv;
 		}
 
