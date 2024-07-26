@@ -88,12 +88,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const translations = {
         en: {
             translation1: "French student",
-            translation2: "Interested in cryptography and steganography. I love playing CTF.",
+            translation2: "Interested in mathematics and computer science. I love playing CTF.",
             translation3: "Open the terminal"
         },
         fr: {
             translation1: "Étudiant français",
-            translation2: "Intéressé par la cryptographie et la stéganographie. J'aime aussi faire des CTFs.",
+            translation2: "Intéressé par les mathématiques et l’informatique. J'aime aussi faire des CTFs.",
             translation3: "Ouvrir le terminal"
         }
     };
