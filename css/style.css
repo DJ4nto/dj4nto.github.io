@@ -6,6 +6,7 @@
   html {
     overflow: hidden;
     background-color: #050505;
+    height: 100%;
   }
   
   body {
@@ -13,16 +14,13 @@
   }
   
   .top {
-    background-color: #050505;
     margin: -10px;
-    border: 0.1px solid #050505;
   }
   
   .top .banner {
-    background-color: #050505;
     margin: 30px -18px 0px -18px;
     border-style: dashed;
-    border-color: #999999 #050505 #050505;
+    border-color: #999999 #00000000 #00000000;
     border-width: 6px;
     height: 120px;
   }
@@ -88,7 +86,7 @@
   }
   
   .main button {
-    background-color: #050505;
+    background-color: #00000000;
     border: solid 2px #56603d;
     width: 250px;
     height: 60px;
@@ -98,7 +96,7 @@
   }
   
   .main button:hover {
-    background-color: #0c0c0c;
+    backdrop-filter: blur(1px);
     border: solid 2px #999999;
     color: #999999;
     transition: all 0.2s ease-in-out;
