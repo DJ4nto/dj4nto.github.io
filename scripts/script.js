@@ -17,7 +17,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
         const responseDiv = document.createElement('div');
         const skip = document.createElement('br') ;
         if (command === 'help') {
-            responseDiv.textContent = 'Commandes disponibles: help, about, date, contact, CV, DubMania, clear';
+            responseDiv.textContent = 'Commandes disponibles: help, about, date, contact, CV, projects, clear';
         } else if (command === 'date') {
             responseDiv.textContent = new Date().toString();
         } else if (command === 'about') {
@@ -46,7 +46,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
             responseDiv.appendChild(link);
             responseDiv.appendChild(skip);
             responseDiv.appendChild(pdf);
-        } else if (command === 'dubmania') {
+        } else if (command === 'projects') {
             const link1 = document.createElement('a');
             link1.href = 'https://github.com/DJ4nto/DubMania';
             link1.target = '_blank';
