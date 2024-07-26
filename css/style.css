@@ -89,18 +89,18 @@
   
   .main button {
     background-color: #050505;
-    border: solid 2px #999999;
+    border: solid 2px #56603d;
     width: 250px;
     height: 60px;
-    color: #999999;
+    color: #56603d;
     font-size: 24px;
     transition: all 0.2s ease-in-out;
   }
   
   .main button:hover {
     background-color: #0c0c0c;
-    border: solid 2px #56603d;
-    color: #56603d;
+    border: solid 2px #999999;
+    color: #999999;
     transition: all 0.2s ease-in-out;
   }
   
@@ -137,14 +137,72 @@
 
   .output .response {
     overflow-y: auto;
+    overflow-x: hidden;
     height: 461px;
     margin-left: -5px;
   }
 
   .response .project {
-    background-color: #8b0a14;
+    background-color: #050505;
+    margin: 3px 0 3px 0;
+    display: grid;
+    grid-template-columns: 100px 300px 380px 200px;
+    gap: 10px;
+    position: relative;
+    border: 2px solid;
+    border-color: #000000 #050505 #000000;
+  }
+
+  .project .img {
+    text-align: center;
+  }
+
+  .project .title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: #56603d;
+    text-align: center;
+    align-self: center;
+    word-wrap: break-word;
   }
   
+  .project .description {
+    font-size: 15px;
+    word-wrap: break-word;
+  }
+
+  .project .link1 {
+    font-size: 20px;
+    grid-column: 3;
+    grid-row: 1;
+    color: #56603d;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+  }
+
+  .project .link1:hover {
+    color: #999999;
+    transition: all 0.2s ease-out;
+    text-decoration: underline;
+  }
+
+  .project .link2 {
+    font-size: 20px;
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: 22px;
+    color: #56603d;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+  }
+
+  .project .link2:hover {
+    color: #999999;
+    transition: all 0.2s ease-out;
+    text-decoration: underline;
+  }
+
   .terminal input {
     width: 60%;
     border: none;

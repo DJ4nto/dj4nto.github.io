@@ -59,7 +59,6 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 			link.href = href;
 			link.target = target;
 			link.textContent = text;
-            link.style.marginLeft = '5px';
 			return link;
 		}
 
@@ -67,7 +66,6 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 		function createText(content) {
 			const text = document.createElement('p');
 			text.style.margin = '0';
-            text.style.marginLeft = '5px';
 			text.textContent = content;
 			return text;
 		}
@@ -87,14 +85,14 @@ document.getElementById('input').addEventListener('keydown', function(event) {
             title.className = 'title';
             const text = createText(description);
             text.className = 'description';
-            const link1 = createLink(github_href);
+            const link1 = createLink(github_href, 'Github');
             link1.className = 'link1';
-            const link2 = createLink(href);
+            const link2 = createLink(href, 'View Site');
             link2.className = 'link2';
-            projectDiv.appendChild = (title);
-            projectDiv.appendChild = (text);
-            projectDiv.appendChild = (link1);
-            projectDiv.appendChild = (link2);
+            projectDiv.appendChild(title);
+            projectDiv.appendChild(text);
+            projectDiv.appendChild(link1);
+            projectDiv.appendChild(link2);
             return projectDiv;
 		}
 
@@ -122,10 +120,8 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 			responseDiv.appendChild(skip);
 			responseDiv.appendChild(pdf);
 		} else if (command === 'projects') {
-			const dubmania = createProject('https://github.com/DJ4nto/DubMania', 'https://dj4nto.github.io/DubMania/', 'DubMania')
-			const test = createProject('https://github.com/DJ4nto', 'none', 'test')
-            responseDiv.appendChild(dubmania);
-			responseDiv.appendChild(test);
+			const dubmania = createProject('https://github.com/DJ4nto/DubMania', 'https://dj4nto.github.io/DubMania/', 'DubMania', "DubMania est un jeux web sur le thème du doublage pour jouer avec ses amis jusqu'à 4 personnes");
+			responseDiv.appendChild(dubmania);
 		} else if (command === 'clear') {
 			output.innerHTML = '';
 		} else {
@@ -143,5 +139,5 @@ document.getElementById('TerminalButton').addEventListener('click', function() {
 
 document.getElementById('CloseTerminalButton').addEventListener('click', function() {
 	var element = document.getElementById('content');
-	element.style.margin = '-300px 0 0 -2500px';
+	element.style.margin = '-300px 0 0 -25000px';
 });
