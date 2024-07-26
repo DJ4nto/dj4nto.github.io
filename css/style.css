@@ -146,7 +146,7 @@
     background-color: #050505;
     margin: 3px 0 3px 0;
     display: grid;
-    grid-template-columns: 100px 300px 380px 200px;
+    grid-template-columns: 400px 380px 200px;
     gap: 10px;
     position: relative;
     border: 2px solid;
