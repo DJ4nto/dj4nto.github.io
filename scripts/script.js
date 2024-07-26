@@ -1,3 +1,10 @@
+let root = document.documentElement;
+    
+root.addEventListener('mousemove', e => {
+  root.style.setProperty('--mouse-x', e.clientX + "px");
+  root.style.setProperty('--mouse-y', e.clientY + "px");
+});
+
 document.addEventListener("DOMContentLoaded", function() {
 	const languageSelect = document.getElementById("language-select");
 	const text1 = document.getElementById("txt_1");
