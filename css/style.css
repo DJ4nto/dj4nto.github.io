@@ -1,44 +1,44 @@
 @font-face {
     font-family: "Consolas";
     src: url(../fonts/Consolas.ttf) format("truetype");
-}
-
-html {
+  }
+  
+  html {
     overflow: hidden;
     background-color: #050505;
-}
-
-body {
+  }
+  
+  body {
     margin: 0;
-}
-
-.top {
+  }
+  
+  .top {
     background-color: #050505;
     margin: -10px;
     border: 0.1px solid #050505;
-}
-
-.top .banner {
+  }
+  
+  .top .banner {
     background-color: #050505;
     margin: 30px -18px 0px -18px;
     border-style: dashed;
     border-color: #999999 #050505 #050505;
     border-width: 6px;
     height: 120px;
-}
-
-.banner .name {
-    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .banner .name {
+    font-family: "Times New Roman", Times, serif;
     font-size: 64px;
     color: #999999;
     position: absolute;
     left: 20px;
     top: 36px;
     text-decoration: none;
-    transition: all .2s ease-out;
-}
-
-.banner .pseudo {
+    transition: all 0.2s ease-out;
+  }
+  
+  .banner .pseudo {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 64px;
@@ -47,155 +47,166 @@ body {
     right: 30px;
     top: 36px;
     text-decoration: none;
-    transition: all .2s ease-out;
-}
-
-.banner a:hover {
-    color: #56603D;
-    transition: all .2s ease-out;
-}
-
-.main {
+    transition: all 0.2s ease-out;
+  }
+  
+  .banner a:hover {
+    color: #56603d;
+    transition: all 0.2s ease-out;
+  }
+  
+  .main {
     font-family: Arial, Helvetica, sans-serif;
-    color: #56603D;
+    color: #56603d;
     text-align: center;
     display: block;
     font-size: 36px;
-}
-
-.main .language-selector {
+  }
+  
+  .main .language-selector {
     position: absolute;
     top: 26%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 26px;
     font-weight: bold;
-}
-
-.main select {
+  }
+  
+  .main select {
     background: none;
     border: none;
-    color: #56603D;
+    color: #56603d;
     font-size: 26px;
     font-weight: bold;
-}
-
-.main .center {
+  }
+  
+  .main .center {
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.main button {
+  }
+  
+  .main button {
     background-color: #050505;
     border: solid 2px #999999;
     width: 250px;
     height: 60px;
     color: #999999;
     font-size: 24px;
-    transition: all .2s ease-in-out;
-}
-
-.main button:hover {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .main button:hover {
     background-color: #0c0c0c;
-    border: solid 2px #56603D;
-    color: #56603D;
-    transition: all .2s ease-in-out;
-}
-
-.content {
+    border: solid 2px #56603d;
+    color: #56603d;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .content {
     background-color: #0c0c0c;
     display: block;
     position: absolute;
     border: 4px solid #000000;
     border-top: 26px solid #000000;
-    height: 64%;
+    height: 550px;
     top: 50%;
     left: 50%;
     margin: -300px 0 0 -2500px;
-}
-
-.terminal {
-    font-family: 'Consolas';
-    color: #56603D;
+  }
+  
+  .terminal {
+    font-family: "Consolas";
+    color: #56603d;
     font-size: large;
     width: 1000px;
-}
-
-.terminal .help {
+  }
+  
+  .terminal .help {
     margin: -20px 0 10px 5px;
-}
-
-.terminal .line {
+  }
+  
+  .terminal .line {
     margin-left: 5px;
-}
-
-.terminal .output {
+  }
+  
+  .terminal .output {
     margin: 5px 0 10px 5px;
-}
+  }
 
-.terminal input {
+  .output .response {
+    overflow-y: auto;
+    height: 461px;
+    margin-left: -5px;
+  }
+
+  .response .project {
+    background-color: #8b0a14;
+  }
+  
+  .terminal input {
     width: 60%;
     border: none;
     background: #0c0c0c;
-    color: #56603D;
-    font-family: 'Consolas';
+    color: #56603d;
+    font-family: "Consolas";
     font-size: large;
     outline: none;
-}
-
-.content .close_terminal {
+  }
+  
+  .content .close_terminal {
     position: relative;
     height: 26px;
     width: 50px;
     background-color: #000000;
-    transition: all .1s ease-out;
+    transition: all 0.1s ease-out;
     border: none;
     color: white;
     top: -26px;
     left: 954px;
-}
-
-.close_terminal:hover {
+  }
+  
+  .close_terminal:hover {
     background-color: red;
-    transition: all .1s ease-out;
-}
-
-.close_terminal:active {
+    transition: all 0.1s ease-out;
+  }
+  
+  .close_terminal:active {
     background-color: #8b0a14;
-}
-
-.bottom {
+  }
+  
+  .bottom {
     position: fixed;
     left: 50%;
     bottom: 1%;
-}
-
-.banner .links{
+  }
+  
+  .banner .links {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-size: larger;
     transform: translateX(-50%);
-}
-
-.banner .links a {
+  }
+  
+  .banner .links a {
     text-decoration: none;
     color: #999999;
     margin: 10px;
-    transition: all .2s ease-out;
-}
-
-.banner .links a:hover {
-    color: #56603D;
-    transition: all .2s ease-out;
-}
-
-.banner .copyrights {
+    transition: all 0.2s ease-out;
+  }
+  
+  .banner .links a:hover {
+    color: #56603d;
+    transition: all 0.2s ease-out;
+  }
+  
+  .banner .copyrights {
     color: #999999;
     transform: translateX(-90px);
-}
-
-.banner .copyrights a {
+  }
+  
+  .banner .copyrights a {
     color: #999999;
-}
+  }
+  
