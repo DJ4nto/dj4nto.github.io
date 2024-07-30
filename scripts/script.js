@@ -98,7 +98,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
             projectDiv.appendChild(text);
             projectDiv.appendChild(link1);
 			if (href !== "none") {
-				const link2 = createLink(href, 'View Site');
+				const link2 = createLink(href, 'Voir le site');
 				link2.className = 'link2';
 				projectDiv.appendChild(link2);
 			}
@@ -134,7 +134,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 		} else if (command === 'clear') {
 			output.innerHTML = '';
 		} else {
-			responseDiv.textContent = 'Commande non reconnue: ' + command;
+			responseDiv.textContent = "'" + command + "' n’est pas reconnu en tant que commande interne";
 		}
 		output.appendChild(responseDiv);
 	}

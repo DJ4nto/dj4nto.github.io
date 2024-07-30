@@ -36,16 +36,8 @@
       right: 0;
       background: radial-gradient(circle, transparent 20%, #05050500 20%, #05050500 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #05050500 20%, #05050500 80%, transparent 80%, transparent) 30px 30px, linear-gradient(#56603d 2.4px, transparent 2.4px) 0 -1.2px, linear-gradient(90deg, #56603d 2.4px, #05050500 2.4px) -1.2px 0, #05050500;
       background-size: 60px 60px, 60px 60px, 30px 30px, 30px 30px;
-      -webkit-mask: radial-gradient(
-        15vw at var(--mouse-x) var(--mouse-y),
-        red,
-        transparent
-      );
-      mask: radial-gradient(
-        15vw at var(--mouse-x) var(--mouse-y),
-        red,
-        transparent 12.5%
-      );
+      -webkit-mask: radial-gradient(15vw at var(--mouse-x) var(--mouse-y), red, transparent);
+      mask: radial-gradient(15vw at var(--mouse-x) var(--mouse-y), red, transparent 12.5%);
     }
   }
 
