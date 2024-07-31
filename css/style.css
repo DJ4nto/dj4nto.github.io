@@ -7,22 +7,6 @@
     --mouse-x: 0;
     --mouse-y: 0;
   }
-
-.visibledevice {
-  display: none;
-}
-.visibledesktop {
-  display: block;
-}
-
-@media (max-width : 320px) {
-    .visibledevice {
-      display: block;
-    }
-    .visibledesktop {
-      display: block;
-    }
-}
   
   html {
     overflow: hidden;
