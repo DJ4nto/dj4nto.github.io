@@ -151,7 +151,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 
 document.getElementById('TerminalButton').addEventListener('click', function() {
 	var element = document.getElementById('content');
-	element.style.margin = '-300px 0 0 -490px';
+	element.style.margin = '-300px 0 0 -500px';
 	document.getElementById('input').focus();
 });
 
