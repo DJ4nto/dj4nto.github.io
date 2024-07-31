@@ -8,12 +8,20 @@
     --mouse-y: 0;
   }
 
-.visibledevice {display:none;}
-.visibledesktop {display:display;}
+.visibledevice {
+  display: none;
+}
+.visibledesktop {
+  display: block;
+}
 
 @media (max-width : 320px) {
-    .visibledevice {display:block;}
-    .visibledesktop {display:none;}
+    .visibledevice {
+      display: block;
+    }
+    .visibledesktop {
+      display: block;
+    }
 }
   
   html {
