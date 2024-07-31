@@ -35,15 +35,23 @@
     </div>
 
     <div class="content" id="content">
-        <button class="close_terminal" id="CloseTerminalButton">X</button>
-        <div class="terminal">
-            <p class="help">Type "help" if you need some / Taper "help" si vous avez besoin d'aide</p>
-            <div class="line">
-                <span id="path">guest@github.io:~$</span>
-                <input type="text" id="input" maxlength="69">
+
+        <div class="visibledesktop">
+            <button class="close_terminal" id="CloseTerminalButton">X</button>
+            <div class="terminal">
+                <p class="help">Type "help" if you need some / Taper "help" si vous avez besoin d'aide</p>
+                <div class="line">
+                    <span id="path">guest@github.io:~$</span>
+                    <input type="text" id="input" maxlength="69">
+                </div>
+                <div id="output" class="output"></div>
             </div>
-            <div id="output" class="output"></div>
         </div>
+
+        <div class="visibledevice">
+            <p>Terminal non disponible sur telephone / Terminal non available on phone</p>
+        </div>
+
     </div>
 
     <div class="bottom">
