@@ -5,6 +5,21 @@ root.addEventListener('mousemove', e => {
   root.style.setProperty('--mouse-y', e.clientY-26 + "px");
 });
 
+function openTerminal() {
+	var element = document.getElementById('content');
+	element.style.margin = '-300px 0 0 -500px';
+	document.getElementById('input').focus();
+}
+
+function closeTerminal() {
+    var element = document.getElementById('content');
+    element.style.margin = '-300px 0 0 -25000px';
+}
+
+document.getElementById('TerminalButton').addEventListener('click', openTerminal);
+document.getElementById('CloseTerminalButton').addEventListener('click', closeTerminal);
+
+
 document.addEventListener("DOMContentLoaded", function() {
 	const languageSelect = document.getElementById("language-select");
 	const text1 = document.getElementById("txt_1");
@@ -107,7 +122,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 
 		// Affiche ce que l'on veut en fonction de l'input
 		if (command === 'help') {
-			responseDiv.textContent = 'Commandes disponibles: help, about, date, contact, CV, projects, clear';
+			responseDiv.textContent = 'Commandes disponibles: help, about, date, contact, cv, projects, clear, quit';
 		} else if (command === 'date') {
 			responseDiv.textContent = new Date().toString();
 		} else if (command === 'about') {
@@ -141,21 +156,12 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 			responseDiv.appendChild(PasswordGenerator);
 		} else if (command === 'clear') {
 			output.innerHTML = '';
+		} else if (command === 'quit') {
+			closeTerminal();
+			output.innerHTML = '';
 		} else {
 			responseDiv.textContent = "'" + command + "' n’est pas reconnu en tant que commande interne";
 		}
 		output.appendChild(responseDiv);
 	}
-});
-
-
-document.getElementById('TerminalButton').addEventListener('click', function() {
-	var element = document.getElementById('content');
-	element.style.margin = '-300px 0 0 -500px';
-	document.getElementById('input').focus();
-});
-
-document.getElementById('CloseTerminalButton').addEventListener('click', function() {
-	var element = document.getElementById('content');
-	element.style.margin = '-300px 0 0 -25000px';
 });
