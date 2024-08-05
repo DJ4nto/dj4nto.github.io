@@ -150,7 +150,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 			responseDiv.appendChild(geolocateIP);
 			const meshR = createProject('https://github.com/DJ4nto/Character_Mesh_Randomizer', 'none', 'Character Mesh Randomizer', "This script is made to modifie player models with bones that are named correctly with the names in the list : Bone_Group, Mixamo's player models, it might not work on other player models ! Use with Blender");
 			responseDiv.appendChild(meshR);
-			const Morpion = createProject('https://github.com/DJ4nto/Morpion', 'none', 'Morpion', 'Morpion made in Python, with a cool bot');
+			const Morpion = createProject('https://github.com/DJ4nto/Morpion', 'none', 'Morpion', 'Tic Tac Toe game made in Python');
 			responseDiv.appendChild(Morpion);
 			const PasswordGenerator = createProject('https://github.com/DJ4nto/PasswordGenerator', 'none', 'PasswordGenerator', 'Generate passwords with python');
 			responseDiv.appendChild(PasswordGenerator);
