@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	const translations = {
 		en: {
 			translation1: "French student",
-			translation2: "Interested in mathematics and computer science. I love playing CTF.",
+			translation2: "Interested in mathematics and computer science. I love playing CTFs.",
 			translation3: "Open the terminal"
 		},
 		fr: {
