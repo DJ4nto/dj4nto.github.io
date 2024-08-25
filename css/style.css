@@ -229,6 +229,33 @@
     text-decoration: underline;
   }
 
+  .response .skill {
+    display: grid;
+    grid-template-columns: 80px 150px 100px;
+    gap: 10px;
+    position: relative;
+    margin-left: 20px;
+  }
+
+  .skill .logo {
+    width: 50px;
+    text-align: center;
+    align-self: center;
+  }
+
+  .skill .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #56603d;
+    text-align: center;
+    align-self: center;
+  }
+  
+  .skill .level {
+    text-align: center;
+    align-self: center; 
+  }
+
   .terminal input {
     width: 60%;
     border: none;

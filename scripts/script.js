@@ -92,6 +92,14 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 			return text;
 		}
 
+		// Fonction pour créer une image
+		function createIMG(link) {
+			const logo = document.createElement('img')
+			logo.style.margin = '0';
+			logo.src = link;
+			return logo;
+		}
+
 		// Elements utiles pour la mise en forme
 		const responseDiv = document.createElement('div');
         responseDiv.className = 'response';
@@ -120,9 +128,25 @@ document.getElementById('input').addEventListener('keydown', function(event) {
             return projectDiv;
 		}
 
+		// Fonction pour créer un skill
+		function createSkill(name, img, master) {
+			const skillDiv = document.createElement('div');
+			skillDiv.className = 'skill';
+			const logo = createIMG(img);
+            logo.className = 'logo';
+			const title = createText(name);
+			title.className = 'title';
+            const level = createText(master + '/5');
+            level.className = 'level';
+            skillDiv.appendChild(logo);
+            skillDiv.appendChild(title);
+            skillDiv.appendChild(level);
+            return skillDiv;
+		}
+
 		// Affiche ce que l'on veut en fonction de l'input
 		if (command === 'help') {
-			responseDiv.textContent = 'Commandes disponibles: help, about, date, contact, cv, projects, clear, quit';
+			responseDiv.textContent = 'Commandes disponibles: help, about, date, contact, cv, projects, languages, clear, quit';
 		} else if (command === 'date') {
 			responseDiv.textContent = new Date().toString();
 		} else if (command === 'about') {
@@ -154,6 +178,17 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 			responseDiv.appendChild(Morpion);
 			const PasswordGenerator = createProject('https://github.com/DJ4nto/PasswordGenerator', 'none', 'PasswordGenerator', 'Generate passwords with python');
 			responseDiv.appendChild(PasswordGenerator);
+		} else if (command === 'languages') {
+			const python = createSkill('Python', 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png', '5')
+			responseDiv.appendChild(python);
+			const html = createSkill('HTML', 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png', '4')
+			responseDiv.appendChild(html);
+			const css = createSkill('CSS', 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png', '3')
+			responseDiv.appendChild(css);
+			const javascript = createSkill('JavaScript', 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png', '3')
+			responseDiv.appendChild(javascript);
+			const csharp = createSkill('C#', 'https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg', '2')
+			responseDiv.appendChild(csharp);
 		} else if (command === 'clear') {
 			output.innerHTML = '';
 		} else if (command === 'quit') {
