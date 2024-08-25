@@ -144,13 +144,41 @@ document.getElementById('input').addEventListener('keydown', function(event) {
             return skillDiv;
 		}
 
+		// Fonction pour changer de couleure
+		function updateColor(color) {
+			var terminal = document.getElementById("terminal");
+			terminal.style.color = color;
+			input.style.color = color;
+		}
+
+		// Fonction pour savoir si la commande de couleure est bien saisie et appelle la fonction pour la changer
+		function handleColor(com) {
+			const parts = com.split(' ');
+			if (parts[0] === 'color' && parts.length > 1) {
+				const color = parts[1];
+				if (color === 'default') {
+					updateColor("#56603d");
+				} else {
+					updateColor(color);
+				}
+				return true
+			}
+			return false
+		}
+
 		// Affiche ce que l'on veut en fonction de l'input
 		if (command === 'help') {
-			responseDiv.textContent = 'Commandes disponibles: help, about, date, contact, cv, projects, languages, clear, quit';
+			responseDiv.textContent = 'Commandes disponibles: about, date, color, contact, cv, projects, languages, clear, quit';
 		} else if (command === 'date') {
 			responseDiv.textContent = new Date().toString();
+		} else if (handleColor(command)) {
+		} else if (command === 'color') {
+			const color_help = createText("color [attr]  --  missing attribute");
+			const color_ex = createText("ex: color red, color default, color #56603d, color rgb(214, 122, 127), color hsl(30deg 82% 43%), color hsla(237deg 74% 33% / 61%)");
+			responseDiv.appendChild(color_help);
+			responseDiv.appendChild(color_ex);
 		} else if (command === 'about') {
-			const me = createText("Je m'appelle Antonin LECOCQ, je suis étudiant diplômé du baccalauréat passionné par la programmation, la cryptographie, la stéganographie et la musique. Je code en html, css, javascript, python et C#. Pour toutes questions, me contacter.");
+			const me = createText("Je m'appelle Antonin LECOCQ, je suis étudiant diplômé du baccalauréat passionné par la programmation, la cryptographie, la stéganographie et la musique. Pour toutes questions, me contacter.");
 			responseDiv.appendChild(me);
 		} else if (command === 'contact') {
 			const mail_L = createLink('mailto:lecocqantonin@gmail.com', 'Me contacter :');
