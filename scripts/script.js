@@ -168,7 +168,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 
 		// Affiche ce que l'on veut en fonction de l'input
 		if (command === 'help') {
-			responseDiv.textContent = 'Commandes disponibles: about, date, color, contact, cv, projects, languages, clear, quit';
+			responseDiv.textContent = 'Commandes disponibles: about, date, color, contact, cv, projects, languages, clear, kill';
 		} else if (command === 'date') {
 			responseDiv.textContent = new Date().toString();
 		} else if (handleColor(command)) {
@@ -219,7 +219,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 			responseDiv.appendChild(csharp);
 		} else if (command === 'clear') {
 			output.innerHTML = '';
-		} else if (command === 'quit') {
+		} else if (command === 'kill') {
 			closeTerminal();
 			output.innerHTML = '';
 		} else {
