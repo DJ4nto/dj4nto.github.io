@@ -174,7 +174,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 		} else if (handleColor(command)) {
 		} else if (command === 'color') {
 			const color_help = createText("color [attr]  --  missing attribute");
-			const color_ex = createText("ex: color red, color default, color #56603d, color rgb(214, 122, 127), color hsl(30deg 82% 43%), color hsla(237deg 74% 33% / 61%)");
+			const color_ex = createText("ex: color red, color default, color #56603d, color rgb(214, 122, 127), color hsl(30deg 82% 43%)");
 			responseDiv.appendChild(color_help);
 			responseDiv.appendChild(color_ex);
 		} else if (command === 'about') {
