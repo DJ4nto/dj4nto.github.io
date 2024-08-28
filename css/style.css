@@ -132,14 +132,14 @@
   
   .content {
     background-color: #0c0c0c;
-    display: block;
+    display: none;
     position: absolute;
     border: 4px solid #000000;
     border-top: 26px solid #000000;
     height: 550px;
     top: 50%;
     left: 50%;
-    margin: -300px 0 0 -2500px;
+    margin: -300px 0 0 -500px;
   }
   
   .terminal {

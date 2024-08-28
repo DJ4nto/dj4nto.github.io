@@ -7,13 +7,13 @@ root.addEventListener('mousemove', e => {
 
 function openTerminal() {
 	var element = document.getElementById('content');
-	element.style.margin = '-300px 0 0 -500px';
+	element.style.display = 'block';
 	document.getElementById('input').focus();
 }
 
 function closeTerminal() {
     var element = document.getElementById('content');
-    element.style.margin = '-300px 0 0 -25000px';
+    element.style.display = 'none';
 }
 
 document.getElementById('TerminalButton').addEventListener('click', openTerminal);
