@@ -190,8 +190,8 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 			const pdf = document.createElement('embed');
 			pdf.src = './assets/CV.pdf';
 			pdf.type = 'application/pdf';
-			pdf.width = "400";
-			pdf.height = "300";
+			pdf.width = "1000";
+			pdf.height = "434";
 			responseDiv.appendChild(link);
 			responseDiv.appendChild(skip);
 			responseDiv.appendChild(pdf);
