@@ -186,7 +186,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 			responseDiv.appendChild(mail_A);
 			responseDiv.appendChild(mail_L);
 		} else if (command === 'cv') {
-			const link = createLink('./assets/CV.pdf', 'Accéder au Curriculum Vitae');
+			const link = createLink('./assets/CV.pdf', 'Access Curriculum Vitae');
 			const pdf = document.createElement('embed');
 			pdf.src = './assets/CV.pdf';
 			pdf.type = 'application/pdf';
@@ -196,7 +196,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 			responseDiv.appendChild(skip);
 			responseDiv.appendChild(pdf);
 		} else if (command === 'projects') {
-			const dubmania = createProject('https://github.com/DJ4nto/DubMania', 'https://dj4nto.github.io/DubMania/', 'DubMania', "DubMania est un jeux web sur le thème du doublage pour jouer avec ses amis jusqu'à 4 personnes");
+			const dubmania = createProject('https://github.com/DJ4nto/DubMania', 'https://dj4nto.github.io/DubMania/', 'DubMania', "DubMania is a dubbing-themed web game that lets you play with up to 4 friends.");
 			responseDiv.appendChild(dubmania);
 			// const geolocateIP = createProject('https://github.com/DJ4nto/GeolocateIP', 'none', 'GeolocateIP', 'Find the location of an IP address with the "requests" library for python then place a ping in a ACSSI map made with # based of the latitude and the longitude');
 			// responseDiv.appendChild(geolocateIP);
@@ -223,7 +223,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 			closeTerminal();
 			output.innerHTML = '';
 		} else {
-			responseDiv.textContent = "'" + command + "' n’est pas reconnu en tant que commande interne";
+			responseDiv.textContent = "'" + command + "' is not recognized as an internal or external command.";
 		}
 		output.appendChild(responseDiv);
 	}
