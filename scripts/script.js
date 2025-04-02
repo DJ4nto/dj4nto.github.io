@@ -29,12 +29,12 @@ document.addEventListener("DOMContentLoaded", function() {
 	const translations = {
 		en: {
 			translation1: "French student",
-			translation2: "Interested in mathematics and computer science. I love playing CTFs.",
-			translation3: "Open the terminal"
+			translation2: "I study mathematics and computer science at Paris Dauphine University.",
+			translation3: "Open terminal"
 		},
 		fr: {
 			translation1: "Étudiant français",
-			translation2: "Intéressé par les mathématiques et l’informatique. J'aime aussi faire des CTFs.",
+			translation2: "J'étudie les mathématiques et l’informatique à l'université Paris Dauphine.",
 			translation3: "Ouvrir le terminal"
 		}
 	};
@@ -168,7 +168,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 
 		// Affiche ce que l'on veut en fonction de l'input
 		if (command === 'help') {
-			responseDiv.textContent = 'Commandes disponibles: about, date, color, contact, cv, projects, languages, clear, kill';
+			responseDiv.textContent = 'Available commands: about, date, color, contact, cv, projects, languages, clear, kill';
 		} else if (command === 'date') {
 			responseDiv.textContent = new Date().toString();
 		} else if (handleColor(command)) {
@@ -181,10 +181,10 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 			const me = createText("Je m'appelle Antonin LECOCQ, je suis étudiant diplômé du baccalauréat passionné par la programmation, la cryptographie, la stéganographie et la musique. Pour toutes questions, me contacter.");
 			responseDiv.appendChild(me);
 		} else if (command === 'contact') {
-			const mail_L = createLink('mailto:lecocqantonin@gmail.com', 'Me contacter :');
-			const mail_A = createText('lecocqantonin@gmail.com');
-			responseDiv.appendChild(mail_L);
+			const mail_A = createText('Contact me at: ');
+			const mail_L = createLink('mailto:lecocqantonin@gmail.com', 'lecocqantonin@gmail.com');
 			responseDiv.appendChild(mail_A);
+			responseDiv.appendChild(mail_L);
 		} else if (command === 'cv') {
 			const link = createLink('./assets/CV.pdf', 'Accéder au Curriculum Vitae');
 			const pdf = document.createElement('embed');
