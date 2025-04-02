@@ -178,7 +178,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 			responseDiv.appendChild(color_help);
 			responseDiv.appendChild(color_ex);
 		} else if (command === 'about') {
-			const me = createText("Je m'appelle Antonin LECOCQ, je suis étudiant diplômé du baccalauréat passionné par la programmation, la cryptographie, la stéganographie et la musique. Pour toutes questions, me contacter.");
+			const me = createText("My name is Antonin LECOCQ, I'm a bachelor student in mathematics and computer science at Paris Dauphine University, If you have any questions, please contact me.");
 			responseDiv.appendChild(me);
 		} else if (command === 'contact') {
 			const mail_A = createText('Contact me at: ');
