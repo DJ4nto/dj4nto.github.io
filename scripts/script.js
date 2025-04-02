@@ -198,14 +198,14 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 		} else if (command === 'projects') {
 			const dubmania = createProject('https://github.com/DJ4nto/DubMania', 'https://dj4nto.github.io/DubMania/', 'DubMania', "DubMania est un jeux web sur le thème du doublage pour jouer avec ses amis jusqu'à 4 personnes");
 			responseDiv.appendChild(dubmania);
-			const geolocateIP = createProject('https://github.com/DJ4nto/GeolocateIP', 'none', 'GeolocateIP', 'Find the location of an IP address with the "requests" library for python then place a ping in a ACSSI map made with # based of the latitude and the longitude');
-			responseDiv.appendChild(geolocateIP);
-			const meshR = createProject('https://github.com/DJ4nto/Character_Mesh_Randomizer', 'none', 'Character Mesh Randomizer', "This script is made to modifie player models with bones that are named correctly with the names in the list : Bone_Group, Mixamo's player models, it might not work on other player models ! Use with Blender");
-			responseDiv.appendChild(meshR);
-			const Morpion = createProject('https://github.com/DJ4nto/Morpion', 'none', 'Morpion', 'Tic Tac Toe game made with Python. Inlcuding a cool bot');
-			responseDiv.appendChild(Morpion);
-			const PasswordGenerator = createProject('https://github.com/DJ4nto/PasswordGenerator', 'none', 'PasswordGenerator', 'Generate passwords with python');
-			responseDiv.appendChild(PasswordGenerator);
+			// const geolocateIP = createProject('https://github.com/DJ4nto/GeolocateIP', 'none', 'GeolocateIP', 'Find the location of an IP address with the "requests" library for python then place a ping in a ACSSI map made with # based of the latitude and the longitude');
+			// responseDiv.appendChild(geolocateIP);
+			// const meshR = createProject('https://github.com/DJ4nto/Character_Mesh_Randomizer', 'none', 'Character Mesh Randomizer', "This script is made to modifie player models with bones that are named correctly with the names in the list : Bone_Group, Mixamo's player models, it might not work on other player models ! Use with Blender");
+			// responseDiv.appendChild(meshR);
+			// const Morpion = createProject('https://github.com/DJ4nto/Morpion', 'none', 'Morpion', 'Tic Tac Toe game made with Python. Inlcuding a cool bot');
+			// responseDiv.appendChild(Morpion);
+			// const PasswordGenerator = createProject('https://github.com/DJ4nto/PasswordGenerator', 'none', 'PasswordGenerator', 'Generate passwords with python');
+			// responseDiv.appendChild(PasswordGenerator);
 		} else if (command === 'languages') {
 			const python = createSkill('Python', 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png', '5')
 			responseDiv.appendChild(python);
