@@ -136,7 +136,19 @@ document.getElementById('input').addEventListener('keydown', function(event) {
             logo.className = 'logo';
 			const title = createText(name);
 			title.className = 'title';
-            const level = createText(master + '/5');
+			let masterTxt = "Unknown";
+			if (master === '1') {
+            	masterTxt = "Beginner";
+			} else if (master === '2') {
+				masterTxt = "Intermediate";
+			} else if (master === '3') {
+				masterTxt = "Competent";
+			} else if (master === '4') {
+				masterTxt = "Advanced";
+			} else if (master === '5') {
+				masterTxt = "Mastered";
+			}
+			const level = createText(masterTxt);
             level.className = 'level';
             skillDiv.appendChild(logo);
             skillDiv.appendChild(title);
