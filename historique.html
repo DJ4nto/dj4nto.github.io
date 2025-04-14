@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Historique</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/petitlogo.png">
+</head>
+
+<body onload="Admin()">
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/logo.png" alt="logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <div id="admin" style="display: none; text-align: center;">
+            <button onclick="addligne('historique', 'rowText1', 'rowText2')">Ajouter une ligne au tableau</button>
+            <textarea id="rowText1" placeholder="Que s'est-il passé ?"></textarea>
+            <input type="date" id="rowText2" />
+        </div>
+
+        <br>
+
+        <table class="table-historique" style="text-align: center;" id="historique">
+            <caption style="background-color: grey">Historique de nos missions</caption>
+            <colgroup>
+                <col>
+                <col>
+            </colgroup>
+            <tr>
+                <th>Mission détaillée</th>
+                <th>Date de l'évennement</th>
+            </tr>
+            <tr>
+                <td>Mission de type "Alibi de relation" qui a permis à un homme marié de rencontrer une femme non mariée</td>
+                <td>2022-03-03</td>
+            </tr>
+            <tr>
+                <td>Mission de type "Alibi d'absence" permettant à une jeune fille de passer une soirée dans une boîte sans que ses parents s'inquiètent</td>
+                <td>2022-03-05</td>
+            </tr>
+            <tr>
+                <td>Mission de type "Alibi d'évènement" permettant à une femme de passer du temps avec des amies au lieu de participer au mariage de son beau-frère</td>
+                <td>2022-03-06</td>
+            </tr>
+            <tr>
+                <td>Mission de type "Alibi Personnalisé" nécessitant 5 acteurs : organiser un faux kidnapping avec témoin pour prouver une infidélité fiscale (rançon) ainsi qu'une absence non justifiée</td>
+                <td>2022-03-13</td>
+            </tr>
+            <tr>
+                <td>Mission de type "Alibi Personnalisé" nécessitant 2 acteurs : un client a demandé à Alibi.com de fournir un alibi crédible pour une soirée d'affaires importante à laquelle il ne peut pas assister en personne. Alibi.com a travaillé avec le client pour élaborer un plan détaillé pour fournir une preuve crédible de sa présence à un autre événement à la même heure. Deux acteurs professionnels ont été mobilisés pour jouer le rôle du client et de son associé d'affaires lors d'une soirée de gala fictive. Des preuves photographiques et de communication ont été créées pour documenter l'événement fictif et fournir une preuve crédible de la présence du client à un autre endroit</td>
+                <td>2022-03-15</td>
+            </tr>
+            <tr>
+                <td>Mission de type "Alibi Personnalisé" : un client a contacté Alibi.com pour obtenir de l'aide dans le cadre d'un divorce à l'amiable. Le client souhaitait éviter des conflits avec son conjoint et trouver un moyen de résoudre la situation de manière pacifique. Alibi.com a mobilisé deux acteurs professionnels pour jouer le rôle de l'avocat du client et de l'avocat de son conjoint lors de la médiation de leur divorce à l'amiable. Les deux acteurs ont travaillé ensemble pour trouver un accord qui convient aux deux parties et pour s'assurer que le processus se déroule de manière efficace et respectueuse. Grâce à l'intervention d'Alibi.com, le client a pu résoudre son divorce à l'amiable sans stress ni conflit, et avec une solution équitable pour tous les concernés</td>
+                <td>2022-03-18</td>
+            </tr>
+            <tr>
+                <td>Mission de type "Alibi Personnalisé" nécessitant 4 acteurs : un client a contacté Alibi.com pour organiser une simulation de cambriolage à son domicile afin de couvrir une rencontre avec sa maîtresse. Alibi.com a mobilisé quatre acteurs professionnels pour simuler un cambriolage réaliste qui incluait une fausse effraction de la porte d'entrée, le bris de quelques objets de valeur, et une mise en scène de la panique du client. En plus de cette simulation de cambriolage, Alibi.com a également fourni au client une fausse facture d'un serrurier pour réparer la porte d'entrée, une fausse facture d'un réparateur pour les objets endommagés, ainsi qu'un faux rapport de police pour signaler le cambriolage. Le client a présenté ces documents à sa femme pour expliquer l'absence des objets volés et des dégâts, ainsi que pour donner une explication crédible à son absence pendant le temps qu'il a passé avec sa maîtresse. Cette simulation de cambriolage a permis au client de poursuivre sa relation extraconjugale sans que sa femme ne découvre rien de suspect</td>
+                <td>2022-03-19</td>
+            </tr>
+            <tr>
+                <td>Mission de type "Alibi Personnalisé" nécessitant 10 acteurs : organisation d'une fausse lune de miel : un client avait besoin de se faire passer pour marié afin de conclure une affaire importante avec un partenaire commercial. Alibi.com a organisé une fausse lune de miel dans une destination exotique pour couvrir l'histoire du couple.</td>
+                <td>2022-03-23</td>
+            </tr>
+            <tr>
+                <td>Mission de type "Alibi d'absence" : simulation d'un vol : un client avait besoin d'une excuse pour expliquer une blessure et une absence prolongée au travail. Alibi.com a organisé une simulation de vol avec une fausse arrestation et une hospitalisation pour justifier l'absence.</td>
+                <td>2022-03-24</td>
+            </tr>
+            <tr>
+                <td>Mission de type "Alibi Personnalisé" nécessitant 1 acteur: fausse rumeur pour éloigner des concurrents : un client avait besoin d'éloigner des concurrents de son entreprise. Alibi.com a lancé une fausse rumeur selon laquelle l'entreprise avait connu des problèmes financiers importants pour décourager les concurrents.</td>
+                <td>2022-03-25</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        pass = '%63%70%61%73%62%69%65%6e%64%75%72%70%61%73%73%77%6f%72%64';
+
+        password = window.prompt('Entrez le mot de passe, si vous ne le connaissez pas, cliquer sur "Annuler"');
+        if (password == unescape(pass)) { //mot de pass = cpasbiendurpassword
+            var administrateur = true;
+            alert('Bienvenue Administrateur');
+        } else {
+            var administrateur = false;
+        }
+
+        if (administrateur) {
+            var adminElement = document.getElementById('admin');
+            adminElement.style.display = 'block';
+        }
+    </script>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>

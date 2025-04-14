@@ -1,0 +1,548 @@
+body {
+    background-color: rgb(166, 179, 185);
+    color: #000;
+}
+
+.dark-mode {
+    background-color: #262626;
+    color: white;
+}
+
+header {
+    padding: 15px;
+}
+
+nav {
+    backdrop-filter: blur(1px);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    display: inline;
+}
+
+h3 {
+    display: inline;
+}
+
+table,
+caption,
+th,
+td {
+    border: 2px solid darkgrey;
+    border-collapse: collapse;
+}
+
+caption,
+th,
+td {
+    padding: 8px;
+}
+
+th {
+    background-color: lightblue;
+}
+
+.plan {
+    height: 550px;
+}
+
+.li-nav {
+    display: inline;
+    width: auto;
+    margin: 0 25px;
+    text-align: right;
+}
+
+/* Les 3 classes css en dessous sont utilisées pour le nav bar */
+
+.lien {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(85, 108, 155);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 1px 1px 2px black;
+    transition: 0.5s;
+}
+
+.lien:visited {
+    color: rgb(85, 108, 155);
+}
+
+.lien:hover {
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bdalogo {
+    width: 100px;
+    height: 100px;
+} 
+
+/* Les 2 class css en dessous utilise pour le boutton Alibi*/
+.mainbtn {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 9999;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    transition: all .5s ease;
+    color: red;
+    border: 4px solid red;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    line-height: 1;
+    font-size: 32px;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.mainbtn:hover {
+    font-weight: bolder;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+}
+
+/* class css pour le button mode sombre/clair */
+.modebtn {
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+    z-index: 9999;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    transition: all .5s ease;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/* class css pour les bouttons secondaires */
+.mini-btn {
+    color: red;
+    padding: 5px;
+    border: 4px solid red;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.br {
+    margin-top: 200px;
+}
+
+.titre {
+    font-family: 'Helvetica';
+    font-size: 72px;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    padding: 30px;
+    padding-top: 50px;
+    text-shadow: 2px 2px 2px darkslategray;
+}
+
+.paragraphe {
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+.liens {
+    display: flex;
+    justify-content: space-around;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.mainpage {
+    margin: -8px;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.mainpage1 {
+    border: none;
+    background-image: url(../images/background1.jpeg);
+    background-size: 100%;
+    height: 101vh;
+    scroll-snap-align: center;
+}
+
+.mainpage2 {
+    border: none;
+    background-image: url(../images/background2.jpeg);
+    background-size: 100%;
+    height: 101vh;
+    scroll-snap-align: center;
+}
+
+.mainpage3 {
+    border: none;
+    background-image: url(../images/backgroun3.jpeg);
+    background-size: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.mainpage4 {
+    border: none;
+    background-image: url(../images/background4.jpeg);
+    background-size: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.mainpage5 {
+    border: none;
+    background-image: url(../images/background5.jpeg);
+    background-size: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.logo {
+    margin-right: auto;
+    margin-top: -8px;
+    padding-left: 22px;
+}
+
+/* class css applique sur chacune des images du carrousel*/
+.unslide {
+    position: relative;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    border: solid;
+    border-color: red;
+    border-width: 10px;
+    border-radius: 50px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* les 4 class en dessous sont utilisee pour le carrousel*/
+.carrousel {
+    display: flex;
+    align-items: center;
+}
+
+.unslide-img {
+    flex-shrink: 0;
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+.carrousel-btn {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-weight: bold;
+    font-size: 80px;
+    cursor: pointer;
+}
+
+.carrousel-btn:hover {
+    animation: rainbow 3s infinite;
+}
+
+/* button du carrousel et prix final du formulaire*/
+@keyframes rainbow {
+    0% {
+        text-shadow: 0 0 10px red;
+    }
+
+    14% {
+        text-shadow: 0 0 10px orange;
+    }
+
+    28% {
+        text-shadow: 0 0 10px yellow;
+    }
+
+    42% {
+        text-shadow: 0 0 10px green;
+    }
+
+    57% {
+        text-shadow: 0 0 10px blue;
+    }
+
+    71% {
+        text-shadow: 0 0 10px indigo;
+    }
+
+    85% {
+        text-shadow: 0 0 10px violet;
+    }
+
+    100% {
+        text-shadow: 0 0 10px red;
+    }
+}
+
+/* class css pour le tableau*/
+.table-historique {
+    position: relative;
+    width: 75%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* popup de la page*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12%;
+    padding: 5px;
+    background-color: #ffffe0;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: #000;
+    z-index: 99999;
+}
+
+.historique-btn {
+    margin: 30px;
+    transition: all 0.5s ease;
+}
+
+/* FORMULAIRE */
+
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
+.stepper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+}
+
+.step--1,
+.step--2,
+.step--3,
+.step--4,
+.step--5 {
+    width: 5rem;
+    padding: 0.5rem 0;
+    background: #fff;
+    color: #666;
+    text-align: center;
+}
+
+/* On va arrondir les contours*/
+.step--1 {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.step--5 {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.step--1,
+.step--2,
+.step--3,
+.step--4,
+.step--5 {
+    border: 1px solid #666;
+}
+
+/* form et input en bas class css applique dans le formulaire */
+.form {
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    width: 50%;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(51, 51, 51, 0.2);
+    display: none;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.form--header-container {
+    background: linear-gradient(to right, rgb(51, 51, 51), #919191);
+    color: #fff;
+
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.form--header-title {
+    font-size: 1.4rem;
+}
+
+.form--header-text {
+    padding: 0.5rem 0;
+}
+
+input[type="text"] {
+    padding: 0.8rem;
+    margin: auto;
+    margin-top: 0.5rem;
+    width: 20rem;
+    display: block;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid #bdbdbb;
+}
+
+.form__btn {
+    background: #333;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 0.5rem 0.7rem;
+    width: 7rem;
+    margin: 1rem auto;
+    border-radius: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form--message-text {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    color: #444;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(51, 51, 51, 0.2);
+    animation: fadeIn 2s, rainbow 1s infinite;
+    border-radius: 1rem;
+}
+
+.form-active {
+    z-index: 1000;
+    display: block;
+}
+
+.form-active-animate-next {
+    animation: moveRighttoMiddle 1s;
+}
+
+.form-inactive-animate-next {
+    display: block;
+    animation: moveMiddletoLeft 1s;
+}
+
+.form-active-animate-prev {
+    animation: moveLefttoMiddle 1s;
+}
+
+.form-inactive-animate-prev {
+    display: block;
+    animation: moveMiddletoRight 1s;
+}
+
+.step-active {
+    background: #666;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+/* animation du formulaire*/
+@keyframes moveMiddletoLeft {
+    0% {
+        transform: translateX(0rem) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-30rem) scale(0.5);
+        opacity: 0;
+    }
+}
+
+@keyframes moveRighttoMiddle {
+    0% {
+        transform: translateX(30rem) scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0rem) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes moveMiddletoRight {
+    0% {
+        transform: translateX(0rem) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(30rem) scale(0.5);
+        opacity: 0;
+    }
+}
+
+@keyframes moveLefttoMiddle {
+    0% {
+        transform: translateX(-30rem) scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0rem) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

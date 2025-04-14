@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BDA.COM</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./bda.png">
+</head>
+
+<body>
+
+    <div id="cookieNotice" class="popup">
+        <div id="closeIcon" style="display: none;">
+        </div>
+        <div class="title-wrap">
+            <h4>Cookie Consent</h4>
+        </div>
+        <div class="content-wrap">
+            <div class="msg-wrap">
+                <img src="./cookie.png" alt="cookie">
+                <p>Le BDA a besoin de vos cookies</p>
+                <div style="text-align: center;">
+                    <button style="font-size: 100%; background-color: #ffecb4; border-width: 1px; border-radius: 5px; cursor: pointer;" onclick="acceptCookieConsent();">Donner</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainpage">
+
+        <div id="home" class="mainpage1">
+            <header>
+                <nav>
+                    <div>
+                        <a href="index.html">
+                            <img class="bdalogo" src="./bda.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="liens">
+                        <ul>
+                            <li class="li-nav"><a href="#info" class="lien">Qu'est-ce ?</a></li>
+                            <li class="li-nav"><a href="#nous" class="lien">Qui ?</a></li>
+                            <li class="li-nav"><a href="#soutenir" class="lien">Ou ?</a></li>
+                            <li class="li-nav"><a href="#aide" class="lien">Quand ?</a></li>
+                            <li class="li-nav"><a href="#pourquoi" class="lien">Pourquoi ?</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="titre">
+                <span class="txt-rotate" data-period="2000" data-rotate='["<br> Le BDA à besoin de vous !",
+                            "<br> PRENEZ ANTONIN AU POLE SITE !"]'>
+                </span>
+            </div>
+
+            </br>
+
+            <div>
+                <button onclick="location.href='formulaire.html'" class="mainbtn">Candidater</button>
+            </div>
+
+            <div>
+                <button id="modeBtn" class="modebtn">clair/sombre</button>
+            </div>
+
+        </div>
+
+        <div id="info" class="mainpage2">
+            <h1 class="titre">Qu'est-ce que le BDA ?</h1>
+            <br>
+            <p class="paragraphe">Le BDA ou "Bureau des arts est l'asso des arts de Dauphine" <br>
+                blablablablablabla blabla blablabla blabla bla blablablabla <br>
+                blablablablablabla blabla blablabla blabla bla blablablabla <br>
+                blablablablablabla blabla blablabla blabla bla blablablabla </p>
+
+            <div class="center">
+                <a class="mini-btn" onclick="location.href='historique.html'">Nos Projets</a>
+            </div>
+        </div>
+
+        <div id="nous" class="mainpage3">
+            <h1 class="titre">Qui somme nous ?</h1>
+
+            <div class="carrousel">
+
+                <p onclick="plusslides(-1)" class="carrousel-btn">&#10094;</p>
+
+                <div class="unslide">
+                    <p>Antonin, le MEILLEUR newbie et futur membre du pole site</p>
+                    <a href="https://fr.wikipedia.org/wiki/Idiot_utile" target="_blank">Wikipedia🔗</a>
+                    <img src="./Antonin.jpg" class="proportion_image" class="unslide-img">
+                </div>
+
+                <div class="unslide">
+                    <p>Fleur, notre présidente adorée</p>
+                    <a href="https://fr.wikipedia.org/wiki/Idiot_utile" target="_blank">Facebook🔗</a>
+                    <img src="./Fleur.jpg" class="proportion_image" class="unslide-img">
+                </div>
+
+                <div class="unslide">
+                    <p>Lucie, la marraine pole site de Antonin</p>
+                    <a href="https://fr.wikipedia.org/wiki/Idiot_utile" target="_blank">Facebook🔗</a>
+                    <img src="./Lucie.jpg" class="proportion_image" class="unslide-img">
+                </div>
+
+                <p onclick="plusslides(1)" class="carrousel-btn">&#10095;</p>
+
+            </div>
+
+        </div>
+
+        <div id="soutenir" class="mainpage4">
+            <h1 class="titre">Ou est le BDA ?</h1>
+            <p class="paragraphe">Découvrez le BDA en B008 au rez de chausser de Dauphine <br>
+                <br>
+            VIENDEZ NOUS VOIR ;)</p>
+
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0fSP3qoS0QY?si=6nHto1aKcNxS5AMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="aide" class="mainpage5">
+            <h1 class="titre">Quand ?</h1>
+
+            <p class="paragraphe">De 17h à 20h le vendredi, au tiparc</p>
+
+            <div class="center">
+                <img class="plan" src="./plan.png" alt="">
+            </div>
+
+        </div>
+
+        <div id="pourquoi" class="mainpage2">
+            <h1 class="titre">Pourquoi le pole site ?</h1>
+            <p class="paragraphe">Antonin souhaite rejoindre le BDA pour proliférer une tradition de travail et d'inplication au sein du bda portée par le pole site depuis des années</p>
+
+            <br>
+
+            <div class="center">
+                <a class="mini-btn" onclick="location.href='glossaire.html'">Voir sa campagne</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
