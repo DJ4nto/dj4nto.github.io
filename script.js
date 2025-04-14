@@ -181,18 +181,6 @@ const modeBtn = document.getElementById('modeBtn');
 const body = document.body;
 let isDarkMode = JSON.parse(localStorage.getItem('theme')) || false; // Récupère la valeure de isDarkMode dans le LocalStorage et si elle n'y est pas, applique la valeure false (light mode)
 
-modeBtn.addEventListener('click', function() {
-    if (isDarkMode) {
-        // Si dark-mode, change au light-mode
-        body.classList.remove('dark-mode');
-    } else {
-        // Si light-mode, change au dark-mode
-        body.classList.add('dark-mode');
-    }
-    isDarkMode = !isDarkMode; // Change la variable a chaque utilisation du bouton
-    localStorage.setItem('theme', isDarkMode); // Enregistre la nouvelle valeure de isDarkMode dans le localStorage
-});
-
 // Fonction qui charge le mode choisi a chaque ouverture de page
 function chargerTheme() {
     if (isDarkMode) {
