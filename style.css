@@ -251,7 +251,7 @@ iframe {
     border-color: red;
     border-width: 10px;
     border-radius: 50px;
-    width: 25%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -266,15 +266,15 @@ iframe {
     flex-shrink: 0;
     max-width: 100%;
     margin-right: 10px;
-    min-width: 30%;
+
 }
 
 .carrousel-btn {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
     font-weight: bold;
     font-size: 80px;
     cursor: pointer;
