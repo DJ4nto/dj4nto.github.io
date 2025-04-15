@@ -242,6 +242,14 @@ iframe {
     padding-left: 22px;
 }
 
+.campagne {
+    margin: 50px;
+    justify-content: justify;
+    text-align: center;
+    font-size: 20px;
+    font-family: Helvetica;
+}
+
 /* class css applique sur chacune des images du carrousel*/
 .unslide {
     position: relative;

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jeu de piste</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./bda.png">
+</head>
+
+<body>
+
+    <div id="admin" style="display: none; text-align: center;">
+        <p class="titre">évènement mystère :</p>
+        <p class="paragraphe">Organisation de prise de photos de classe pour les TD de toutes les licences (en partenariat avec le labphoto)</p>
+        <br> <br> <br>
+    </div>
+
+    <br>
+
+    <p class="paragraphe">rafraichissez la page quand vous avez trouvé
+        <br>
+        La réponse se note tout en minuscule avec des espaces entre les mots
+    </p>
+    <img class="center" src="./rebu.png" alt="rebu">
+    
+
+    <script>
+        pass = '%6A%65%20%76%6F%74%65%20%61%6E%74%6F%6E%69%6E';
+
+        password = window.prompt('Entrez le mot de passe, si vous ne le connaissez pas, cliquer sur "Annuler"');
+        if (password == unescape(pass)) {
+            var administrateur = true;
+            alert('Vous avez réussi !');
+        } else {
+            var administrateur = false;
+        }
+
+        if (administrateur) {
+            var adminElement = document.getElementById('admin');
+            adminElement.style.display = 'block';
+        }
+    </script>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>
