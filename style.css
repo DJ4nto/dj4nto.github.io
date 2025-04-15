@@ -62,7 +62,7 @@ th {
 .lien {
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(85, 108, 155);
+    color: red;
     font-size: 20px;
     font-weight: bold;
     font-family: Helvetica;
@@ -246,7 +246,7 @@ iframe {
     margin: 50px;
     justify-content: justify;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     font-family: Helvetica;
 }
 
@@ -257,8 +257,8 @@ iframe {
     backdrop-filter: blur(3px);
     border: solid;
     border-color: red;
-    border-width: 10px;
-    border-radius: 50px;
+    border-width: 5px;
+    border-radius: 20px;
     height: 80%;
     margin-left: auto;
     margin-right: auto;
