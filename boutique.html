@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page d'achat</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .product-title {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    .product-price {
+      color: #4CAF50;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .buy-button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .buy-button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Boutique en ligne
+  </header>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x150" alt="Produit 1">
+      <div class="product-title">Produit 1</div>
+      <div class="product-price">19,99 €</div>
+      <button class="buy-button">Acheter</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x150" alt="Produit 2">
+      <div class="product-title">Produit 2</div>
+      <div class="product-price">29,99 €</div>
+      <button class="buy-button">Acheter</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x150" alt="Produit 3">
+      <div class="product-title">Produit 3</div>
+      <div class="product-price">39,99 €</div>
+      <button class="buy-button">Acheter</button>
+    </div>
+  </section>
+
+</body>
+</html>
